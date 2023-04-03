@@ -16,6 +16,7 @@ docs = [
                 path = "common",
                 name = "Common",
                 giturl = "https://github.com/tecosaur/DataToolkitCommon.jl.git"),
+    MultiDocumenter.DropdownNav("Collections", [])
 ]
 
 outpath = joinpath(@__DIR__, "docs")
