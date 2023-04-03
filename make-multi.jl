@@ -27,7 +27,7 @@ MultiDocumenter.make(
     search_engine = MultiDocumenter.SearchConfig(
         index_versions = ["stable", "dev"],
         engine = MultiDocumenter.FlexSearch),
-    rootpath = "DataToolkitDocs")
+    rootpath = "/DataToolkitDocs/")
 
 # --- Edits ---
 
