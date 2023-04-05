@@ -27,7 +27,10 @@ MultiDocumenter.make(
     search_engine = MultiDocumenter.SearchConfig(
         index_versions = ["stable", "dev"],
         engine = MultiDocumenter.FlexSearch),
+    brand_image = MultiDocumenter.BrandImage("/DataToolkitDocs", "logo-small.svg"),
     rootpath = "/DataToolkitDocs/")
+
+mv("logo-small.svg", joinpath(outpath, "logo-small.svg"))
 
 # --- Edits ---
 
@@ -63,7 +66,9 @@ html.theme--documenter-dark #multi-page-nav {
     "font-size: 14px;" => "font-size: 1.1em;",
     "\n    text-transform: uppercase;" => "",
     "color: #fff;" => "color: inherit;\n    opacity: 1;",
-    "color: #ccc;" => "color: inherit;\n    opacity: 0.75;"
+    "color: #ccc;" => "color: inherit;\n    opacity: 0.75;",
+    "max-height: calc(var(--navbar-height) - 10px);" =>
+        "max-height: calc(var(--navbar-height) - 15px);"
     ]
     multidoc_css_file = joinpath(outpath, "assets", "default", "multidoc.css")
     chmod(multidoc_css_file, 0o664)
