@@ -1,0 +1,8 @@
+#+title: DataToolkitDocs
+#+author: tecosaur
+
+This is an aggregation of the documentation of:
++ DataToolkit.jl
++ DataToolkitBase.jl
++ DataToolkitCommon.jl
+along with a collection of data catalogues.
